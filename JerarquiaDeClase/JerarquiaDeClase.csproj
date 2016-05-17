@@ -44,8 +44,10 @@
     <Compile Include="Alumno.cs" />
     <Compile Include="AlumnoEgresado.cs" />
     <Compile Include="Persona.cs" />
+    <Compile Include="Profesor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SerHumano.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

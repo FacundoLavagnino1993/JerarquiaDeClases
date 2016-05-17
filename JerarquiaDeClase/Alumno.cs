@@ -15,6 +15,12 @@ namespace JerarquiaDeClase
             this.Nombre = nombre;
         }
 
+        public override void mostrarFecha()
+        {
+            //throw new NotImplementedException();
+            Console.WriteLine(FechaNacimiento);
+        }
+
         public override void mostrar() // Para implementar la funcion llamamos con public override para sobreescribir al metodo.
                                         
         {
@@ -34,6 +40,11 @@ namespace JerarquiaDeClase
               //  throw new NotImplementedException();
                 this._nombre = value; // Le ingresamos valor a la propiedad.
             }
+        }
+
+        public virtual void algoMasVirtual()
+        { 
+        
         }
         
     }

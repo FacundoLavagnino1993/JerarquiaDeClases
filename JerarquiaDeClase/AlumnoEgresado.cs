@@ -21,6 +21,10 @@ namespace JerarquiaDeClase
             Console.WriteLine("Año de egreso : "+this.AñoEgreso);
         }
 
+        public override void algoMasVirtual()
+        {
+            base.algoMasVirtual();
+        }
+
     }
 }
-// Reglas de herecia : 

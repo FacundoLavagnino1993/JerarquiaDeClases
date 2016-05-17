@@ -6,12 +6,22 @@ using System.Threading.Tasks;
 
 namespace JerarquiaDeClase
 {
-     public abstract class Persona // La clase persona, lleva el modificador public y el modificador abstract. Persona pasa a ser una clase abstracta.
+    public abstract class Persona : SerHumano // La clase persona, lleva el modificador public y el modificador abstract. Persona pasa a ser una clase abstracta.
     {                               //Las clases abstractas no se pueden instanciar.
                                     // 1 * Los metodos abstractos solo estan en clases abstractas.
                                     // 2 * No tienen implementacion
         public string dni;
         protected string _nombre;
+
+        public Persona()
+        { }
+
+        public override void mostrarFecha()
+        {
+            //throw new NotImplementedException();
+            Console.WriteLine(FechaNacimiento);
+        }
+
         public abstract string Nombre // Propiedad abstracta.
         {
             get; // Tanto get como set, en el metodo abtsracto no lleva apertura de llaves, solo punto y come;
@@ -30,7 +40,10 @@ namespace JerarquiaDeClase
             this.dni = dni;
             this._nombre = nombre;
         }
-
+        public override void algovirtual()
+        {
+            base.algovirtual();
+        }
      }
 }
 

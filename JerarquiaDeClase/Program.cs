@@ -30,3 +30,4 @@ namespace JerarquiaDeClase
         }
     }
 }
+// Reglas de herecia : Las clases abstractas pueden implementar un metodo abstracto, pero siempre la proxima clase no abstracta tiene que implementar dicho metodo
